@@ -14,12 +14,12 @@ namespace DynamicIPChecker
         /// </summary>
         static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[]
+            System.ServiceProcess.ServiceBase[] ServicesToRun;
+            ServicesToRun = new System.ServiceProcess.ServiceBase[]
             {
-                new Service1()
+                new ServiceBase()
             };
-            ServiceBase.Run(ServicesToRun);
+            System.ServiceProcess.ServiceBase.Run(ServicesToRun);
         }
     }
 }
