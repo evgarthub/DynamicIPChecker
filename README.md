@@ -9,6 +9,7 @@ In appSettings section you can customize:
 - Subject of message (*emailSubject*): subject of message - I use it for email filtering;
 - Email template (*emailBodyTemplate*): template of the message {0} - PC name, {1} - IP address;
 - Checking interval in ms (*checkInterval*): IP will be checked every X milliseconds;
+In mailSettings section you can enter you email credentials.
 
 # ToDo
 - add more "IP checker"-services in case main one will be unavailable.
