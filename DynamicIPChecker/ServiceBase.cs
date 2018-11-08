@@ -55,7 +55,7 @@ namespace DynamicIPChecker
 
             eventLog1.WriteEntry("Your current IP is: " + currentIP);
 
-            if (this.MyExternalIP != currentIP)
+            if (!string.IsNullOrEmpty(currentIP) && this.MyExternalIP != currentIP)
             {
                 SendResetEmail(currentIP);
                 this.MyExternalIP = currentIP;
